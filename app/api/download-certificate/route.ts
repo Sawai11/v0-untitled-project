@@ -20,7 +20,7 @@ export async function GET() {
 
     // Set appropriate headers for file download
     const headers = new Headers()
-    headers.set("Content-Disposition", 'attachment; filename="course-certificate.pdf"')
+    headers.set("Content-Disposition", 'attachment; filename="NPTELCertificate.pdf"')
     headers.set("Content-Type", "application/pdf")
 
     return new NextResponse(fileBuffer, {
